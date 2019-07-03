@@ -72,6 +72,9 @@ public class BitmapDispatcher extends Thread{
         Bitmap bitmap = null;
         bitmap = downloadImage(br.getUrl());
 
+        //加入缓存机制memory+disk
+
+
         return bitmap;
     }
 
