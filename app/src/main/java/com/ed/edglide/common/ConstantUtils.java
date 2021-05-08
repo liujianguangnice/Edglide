@@ -1,9 +1,6 @@
 package com.ed.edglide.common;
 
 /**
- * @author : ljg on @time 2018/10/17 13:56
- * @email : liujga@enn.cn
- * @desscribe :
  */
 public class ConstantUtils {
 

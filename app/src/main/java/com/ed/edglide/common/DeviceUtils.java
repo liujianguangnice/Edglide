@@ -25,9 +25,6 @@ import java.util.regex.Pattern;
 /**
  * describe：设备判断
  *
- * @author ：鲁宇峰 on 2018/12/4 15：20
- *         email：466708987@qq.com
- *         github：https://github.com/Victory-Over
  */
 @SuppressLint("PrivateApi")
 public class DeviceUtils {

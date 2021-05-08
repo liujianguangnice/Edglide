@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * @author ：mp5a5 on 2018/9/13 16：48
- * @describe
- * @email：wwb199055@126.com
  */
 public class UiUtils {
     public static <T extends View> T findViewById(Activity activity, @IdRes int id) {

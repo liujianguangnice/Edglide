@@ -20,8 +20,6 @@ import java.io.ByteArrayOutputStream;
 import java.math.BigDecimal;
 
 /**
- * 作者： liujianguang on 2018/10/12 17:52
- * 邮箱： liujga@enn.cn
  */
 public class ImgTransUtil {
 

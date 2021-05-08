@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
 /**
- * @author ：wuchao on 2019/5/5
  *      跳转操作
  */
 public class GoPageUtils {

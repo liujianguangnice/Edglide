@@ -20,9 +20,6 @@ import java.lang.reflect.Method;
 /**
  * describe：
  *
- * @author ：鲁宇峰 on 2018/12/4 15：20
- *         email：466708987@qq.com
- *         github：https://github.com/Victory-Over
  */
 public class StatusBarUtils {
 
