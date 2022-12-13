@@ -60,7 +60,7 @@ public class MainActivity extends BaseActivity {
             String url = null;
             switch (i){
                 case 1:
-                    url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562161308497&di=23728b7bc8249b7a82132e561a3a2d6a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01e5ec562847836ac72548781a99a9.gif";
+                    url = "https://inews.gtimg.com/newsapp_bt/0/15128231645/1000";
                     break;
                 case 2:
                     url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562161200909&di=0628697ac3386ae4422e4fc58ea6943e&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171123%2Fb988fb2283a54564ae91ec837907a384.jpeg";
@@ -118,7 +118,7 @@ public class MainActivity extends BaseActivity {
         llImages.addView(imageView);
 
         Glide.with(this)
-                .load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562161226360&di=41af7b585002d491b4989c20121488b5&imgtype=0&src=http%3A%2F%2Fpic69.nipic.com%2Ffile%2F20150613%2F21217611_173253242649_2.jpg")
+                .load("https://hbimg.b0.upaiyun.com/fbd709caf6d4212323d849f28e6aeccba068dc9930aab7-0dI3RV_fw658")
                 .loading(R.mipmap.loading)
                 .listener(new RequestListener() {
                     @Override

@@ -5,7 +5,7 @@ import android.widget.ImageView;
 
 import java.lang.ref.SoftReference;
 
-/*图片请求对象封装类
+/*图片请求对象封装类   BitmapRequest一个请求就是一个客户，第一件事就是让客户整理好自己的请求
 glide.with(this)
        .load(url)
        .loading(R.drawable.loading)
@@ -59,7 +59,7 @@ public class BitmapRequest {
     //显示图片控件
     public void into(ImageView imageView){
         imageView.setTag(this.urlMd5);
-        this.imageView = new SoftReference<>(imageView);
+        this.imageView = new SoftReference<>(imageView);//软：内存吃紧就回收
 
         //into方法执行的时候才把图片请求加入到requestQueue请求队列中
         //在这里创建RequestManager对象

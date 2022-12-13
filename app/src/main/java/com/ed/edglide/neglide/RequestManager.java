@@ -1,7 +1,13 @@
 package com.ed.edglide.neglide;
 
 import java.util.concurrent.LinkedBlockingQueue;
-
+/*RequestManager客户经理管理客户，
+客户经理出现后，做两件事：
+1.startAllDispatcher让银行小姐姐全部上岗，每个小姐姐（BitmapDispatcher extends Thread）就位，共同面对一个阻塞队列，并让他们开始轮询工作
+2.放了一排空座位new LinkedBlockingQueue<>()，等待具体来办事儿的人
+客户出现后：
+1.把客户放到空座位队列中就不用管了
+*/
 public class RequestManager {
     //单例
     private static RequestManager requestManager = null;
@@ -46,15 +52,15 @@ public class RequestManager {
     }
 
 
-    //创建并开始所有的线程
+    //创建并开始所有的线程（一个调度员就是一个银行柜员）
     public void startAllDispatcher() {
-        //获取手机支持的单个应用最大的线程数
+        //获取手机支持的单个应用最大的线程数(最多有几个柜员)
         int threadCount = Runtime.getRuntime().availableProcessors();
         bitmapDispatchers = new BitmapDispatcher[threadCount];
         for (int i = 0; i < threadCount; i++) {
             BitmapDispatcher bitmapDispatcher = new BitmapDispatcher(requestQueue);
             bitmapDispatcher.start();
-            //要将灭一个dispatcher放到数组中，方便统一管理
+            //要将每一个dispatcher放到数组中，方便统一管理
             bitmapDispatchers[i] = bitmapDispatcher;
         }
     }

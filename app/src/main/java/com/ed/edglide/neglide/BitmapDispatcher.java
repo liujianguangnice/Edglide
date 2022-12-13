@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.LinkedBlockingQueue;
-
+/*一个银行柜员，就是一个线程*/
 public class BitmapDispatcher extends Thread{
 
     //创建一个阻塞队列
